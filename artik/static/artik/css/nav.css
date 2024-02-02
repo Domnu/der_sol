@@ -1,0 +1,94 @@
+/*Reset CSS*/
+
+/**{*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*    font-family: Avenir, sans-serif;*/
+/*}*/
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background-color: #555;
+    padding-left: 0;
+    padding-right: 5px
+
+/*    font-size: 0.5cm;*/
+/*    font-weight:bold;*/
+/*    !*color: #fff; !* Couleur du texte de la barre de menu *!*!*/
+/*    letter-spacing: 0.1em;*/
+/*    text-align: center;*/
+
+}
+
+nav ul{
+    list-style-type: none;
+    inset-inline: auto;
+    padding-left: 0;
+    font-size: 18px;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+    background-color: black; /* ici - color du déroulant sous onglet*/
+}
+
+.sous{
+    display: none; /* ici - ne pas affficher déroulant sous onglet*/
+    box-shadow: 0 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 200%;
+    z-index: 1000;
+    padding-left: 0;  /* ici - padding du déroulant sous onglet*/
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+    background-color: black;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:"▼";
+    font-size: 12px;
+}
+
+/*.conteneur{*/
+/*  margin: 50px 20px;*/
+/*  height: 1500px;*/
+/*}*/
