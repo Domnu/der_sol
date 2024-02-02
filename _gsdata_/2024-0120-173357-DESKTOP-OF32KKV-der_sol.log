@@ -1,0 +1,39 @@
+2024-01-20 17:34:15: == Sync Started by User Command
+2024-01-20 17:34:15: ConnectCloned connected to file:///H:/der_sol
+2024-01-20 17:34:15: ConnectCloned connected to file:///H:/der_sol
+2024-01-20 17:34:15: ConnectCloned connected to file:///H:/der_sol
+2024-01-20 17:34:15: ConnectCloned connected to file:///C:/Users/roadn/OneDrive/Python_bakup/der_sol
+2024-01-20 17:34:15: ConnectCloned connected to file:///C:/Users/roadn/OneDrive/Python_bakup/der_sol
+2024-01-20 17:34:15: ConnectCloned connected to file:///C:/Users/roadn/OneDrive/Python_bakup/der_sol
+2024-01-20 17:34:15: Nouvelle Copie 'H:/der_sol/.idea/DatabaseToolSources.xml' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/.idea/DatabaseToolSources.xml' (1,100)
+2024-01-20 17:34:16: Ecrasement 'H:/der_sol/artik/__pycache__/forms.cpython-311.pyc' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/__pycache__/forms.cpython-311.pyc' (774)
+2024-01-20 17:34:16: Ecrasement 'H:/der_sol/artik/forms.py' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/forms.py' (171)
+2024-01-20 17:34:16: Ecrasement 'H:/der_sol/artik/store_in_db.py' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/store_in_db.py' (1,360)
+2024-01-20 17:34:16: Suppression du fichier C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/store_in_db_Org_01.py
+2024-01-20 17:34:16: Ecrasement 'H:/der_sol/artik/urls.py' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/urls.py' (447)
+2024-01-20 17:34:16: Ecrasement 'H:/der_sol/artik/__pycache__/views.cpython-311.pyc' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/__pycache__/views.cpython-311.pyc' (2,128)
+2024-01-20 17:34:16: Ecrasement 'H:/der_sol/artik/__pycache__/urls.cpython-311.pyc' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/__pycache__/urls.cpython-311.pyc' (439)
+2024-01-20 17:34:16: Suppression du fichier C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/templates/artik/recherche_page_web.html
+2024-01-20 17:34:16: Ecrasement 'H:/der_sol/artik/views.py' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/views.py' (1,232)
+2024-01-20 17:34:16: Suppression du fichier C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/templates/artik/recherche_page_web_Org_01.html
+2024-01-20 17:34:16: Suppression du fichier C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/templates/artik/resultats.html
+2024-01-20 17:34:16: Nouvelle Copie 'H:/der_sol/artik/templates/artik/search.html' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/templates/artik/search.html' (5,631)
+2024-01-20 17:34:16: Suppression du fichier C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/views_Org_01.py
+2024-01-20 17:34:16: Création du dossier C:/Users/roadn/OneDrive/Python_bakup/der_sol/01_Arch_der_sol/script_py
+2024-01-20 17:34:16: Suppression du fichier C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/views_Org_02.py
+2024-01-20 17:34:16: Suppression du fichier C:/Users/roadn/OneDrive/Python_bakup/der_sol/.idea/sqlDataSources.xml
+2024-01-20 17:34:16: Ecrasement 'H:/der_sol/artik/templates/artik/base.html' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/templates/artik/base.html' (7,052)
+2024-01-20 17:34:16: Nouvelle Copie 'H:/der_sol/01_Arch_der_sol/script_py/test.txt' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/01_Arch_der_sol/script_py/test.txt' (13)
+2024-01-20 17:34:16: Nouvelle Copie 'H:/der_sol/01_Arch_der_sol/script_py/try.py' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/01_Arch_der_sol/script_py/try.py' (180)
+2024-01-20 17:34:16: Close Modified Folder (mod-time, acl): /artik/__pycache__
+2024-01-20 17:34:16: Close Modified Folder (mod-time, acl): /artik/templates/artik
+2024-01-20 17:34:16: Close Modified Folder (mod-time, acl): /01_Arch_der_sol/script_py
+2024-01-20 17:34:16: Close Modified Folder (mod-time, acl): /01_Arch_der_sol
+2024-01-20 17:34:16: Close Modified Folder (mod-time, acl): /artik
+2024-01-20 17:34:16: Nouvelle Copie 'H:/der_sol/derby.log' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/derby.log' (12,274)
+2024-01-20 17:34:16: Ecrasement 'H:/der_sol/db.sqlite3' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/db.sqlite3' (188,416)
+2024-01-20 17:34:16: Ecrasement 'H:/der_sol/.idea/workspace.xml' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/.idea/workspace.xml' (17,611)
+2024-01-20 17:34:16: Close Modified Folder (mod-time, acl): /.idea
+2024-01-20 17:34:16: Sauvegarde du fichier d'état H:/der_sol/_gsdata_/_file_state_v4._gs
+2024-01-20 17:34:16: Sauvegarde du fichier d'état C:/Users/roadn/OneDrive/Python_bakup/der_sol/_gsdata_/_file_state_v4._gs
+2024-01-20 17:34:19: == Sync Complete. Time: 00:00:04, Speed: 0.00/s, Elements synchronisés : 23, Erreurs : 0

@@ -1,0 +1,31 @@
+2024-01-23 20:45:35: == Sync Started by User Command
+2024-01-23 20:45:35: ConnectCloned connected to file:///H:/der_sol
+2024-01-23 20:45:35: ConnectCloned connected to file:///H:/der_sol
+2024-01-23 20:45:35: ConnectCloned connected to file:///H:/der_sol
+2024-01-23 20:45:35: ConnectCloned connected to file:///C:/Users/roadn/OneDrive/Python_bakup/der_sol
+2024-01-23 20:45:35: ConnectCloned connected to file:///C:/Users/roadn/OneDrive/Python_bakup/der_sol
+2024-01-23 20:45:35: ConnectCloned connected to file:///C:/Users/roadn/OneDrive/Python_bakup/der_sol
+2024-01-23 20:45:36: Ecrasement 'H:/der_sol/db.sqlite3' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/db.sqlite3' (188,416)
+2024-01-23 20:45:36: Ecrasement 'H:/der_sol/artik/models.py' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/models.py' (474)
+2024-01-23 20:45:36: Ecrasement 'H:/der_sol/artik/__pycache__/models.cpython-311.pyc' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/__pycache__/models.cpython-311.pyc' (1,136)
+2024-01-23 20:45:36: Nouvelle Copie 'H:/der_sol/artik/migrations/__pycache__/0007_delete_pageweb.cpython-311.pyc' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/migrations/__pycache__/0007_delete_pageweb.cpython-311.pyc' (642)
+2024-01-23 20:45:36: Nouvelle Copie 'H:/der_sol/artik/migrations/0007_delete_pageweb.py' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/migrations/0007_delete_pageweb.py' (307)
+2024-01-23 20:45:36: Ecrasement 'H:/der_sol/artik/static/artik/css/style_a.css' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/static/artik/css/style_a.css' (2,336)
+2024-01-23 20:45:36: Création du dossier C:/Users/roadn/OneDrive/Python_bakup/der_sol/01_Arch_der_sol/Bootstrap
+2024-01-23 20:45:36: Ecrasement 'H:/der_sol/artik/templates/artik/index.html' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/templates/artik/index.html' (4,509)
+2024-01-23 20:45:36: Nouvelle Copie 'H:/der_sol/.idea/DatabaseToolDbSqlDialect.xml' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/.idea/DatabaseToolDbSqlDialect.xml' (196)
+2024-01-23 20:45:36: Close Modified Folder (mod-time, acl): /artik/__pycache__
+2024-01-23 20:45:36: Close Modified Folder (mod-time, acl): /artik/migrations/__pycache__
+2024-01-23 20:45:36: Close Modified Folder (mod-time, acl): /artik/static/artik/css
+2024-01-23 20:45:36: Close Modified Folder (mod-time, acl): /artik/migrations
+2024-01-23 20:45:36: Nouvelle Copie 'H:/der_sol/01_Arch_der_sol/Bootstrap/Text · Bootstrap v5.2.url' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/01_Arch_der_sol/Bootstrap/Text · Bootstrap v5.2.url' (75)
+2024-01-23 20:45:36: Close Modified Folder (mod-time, acl): /01_Arch_der_sol/Bootstrap
+2024-01-23 20:45:36: Close Modified Folder (mod-time, acl): /01_Arch_der_sol
+2024-01-23 20:45:36: Ecrasement 'H:/der_sol/artik/templates/artik/base.html' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/templates/artik/base.html' (7,119)
+2024-01-23 20:45:36: Ecrasement 'H:/der_sol/.idea/workspace.xml' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/.idea/workspace.xml' (17,707)
+2024-01-23 20:45:36: Close Modified Folder (mod-time, acl): /artik/templates/artik
+2024-01-23 20:45:36: Close Modified Folder (mod-time, acl): /.idea
+2024-01-23 20:45:36: Close Modified Folder (mod-time, acl): /artik
+2024-01-23 20:45:36: Sauvegarde du fichier d'état H:/der_sol/_gsdata_/_file_state_v4._gs
+2024-01-23 20:45:36: Sauvegarde du fichier d'état C:/Users/roadn/OneDrive/Python_bakup/der_sol/_gsdata_/_file_state_v4._gs
+2024-01-23 20:45:38: == Sync Complete. Time: 00:00:03, Speed: 0.00/s, Elements synchronisés : 12, Erreurs : 0

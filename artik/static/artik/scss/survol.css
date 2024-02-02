@@ -1,0 +1,68 @@
+.navbar {
+  border-bottom: 1px solid #999999;
+  background-color: rgba(44, 100, 77, 0.99);
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0 20px 0 20px;
+}
+
+.nav-link {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  background-color: #cccccc;
+  color: #ff5733;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  background-color: #cccccc;
+}
+
+.nav-item {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.btn.btn-default.dropdown-toggle {
+  color: #f5faf7;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Add custom styles to open dropdown on hover */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  background-color: #d9d9d9;
+}
+.dropdown-menu .dropdown-item {
+  color: rgba(6, 44, 196, 0.99);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Change la couleur de survol du bouton Search dans le fichier scss */
+/* Changes the hover colour of the Search button in the scss file */
+.btn.btn-primary:hover {
+  background-color: #b3b3b3;
+}
+
+/* Form to search */
+.d-flex {
+  height: 35px;
+  align-items: center;
+  border: 5px solid #2e654e;
+  border-radius: 10px;
+}
+
+/* Form to search */
+.hauteur {
+  height: 30px;
+  padding: 0 10px 0 10px;
+}
+
+/*# sourceMappingURL=survol.css.map */

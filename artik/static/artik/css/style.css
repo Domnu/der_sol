@@ -1,0 +1,65 @@
+/* Style par défaut pour les grands écrans */
+header {
+    height: 450px;
+    /* autres styles... */
+}
+        /* Réduire la hauteur du header pour les écrans de taille moyenne */
+        @media (max-width: 1024px) {
+          header {
+            height: 220px;
+          }
+        }
+
+        /* Réduire davantage la hauteur du header pour les petits écrans */
+        @media (max-width: 768px) {
+          header {
+            height: 90px;
+          }
+        }
+
+        /* Réduire la hauteur du header pour les très petits écrans, comme les téléphones mobiles */
+        @media (max-width: 480px) {
+          header {
+            height: 60px;
+          }
+        }
+
+header {
+    /*background-color: #FFD700; !* Couleur de l'en-tête *!*/
+    /*background-image: image(url("img/main_eau_02.jpg"));*/
+    background-image: url("../img/main_eau_02.png"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    /*height: 450px; !* You must set a specified height *!*/
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    width: 100px; /* Largeur du logo */
+    height: auto; /* Ajuste la hauteur en conséquence */
+    /*height: max-content; !* Ajuste la hauteur en conséquence *!*/
+}
+
+
+hr {
+    border: double; /* Supprime la bordure par défaut */
+    height: 2px; /* Définit la hauteur de la ligne */
+    background-color: #000; /* Change la couleur de fond */
+    margin: 0 0; /* Gère l'espacement au-dessus et en dessous de la ligne */
+}
+
+h1 {
+    font-size: 30px; /* Ajustement de la taille de la police pour l'en-tête */
+}
+
+h2 {
+    font-size: 24px; /* Ajustement de la taille de la police pour l'en-tête */
+}
+
+pA {
+    font-size: 16px; /* Ajustement de la taille de la police pour les paragraphes */
+}
+

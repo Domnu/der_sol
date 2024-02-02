@@ -1,0 +1,88 @@
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    background-color: #f4f4f4;*/
+/*}*/
+
+.container {
+    max-width: 800px; /* Largeur maximale de 800 pixels */
+    margin: 0 auto; /* Pour centrer le contenu horizontalement */
+    padding: 20px;
+}
+
+/* Sustraire de la marge en bas de chaque paragraphe */
+.spaceP p {
+    margin-bottom: 0.4em; /* Ajustez la valeur selon l'espacement souhaité */
+    margin-top: 0.4em;
+}
+
+/* ========================================*/
+/* ================= BODY =================*/
+/* Style par défaut pour les grands écrans */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    font-size: 1em; /* change x-large to em or px as per you requirement */
+    font-weight: normal; /* 600 */
+}
+
+/* Réduire font-size et font-weight pour les écrans de taille moyenne */
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+/* Réduire davantage font-size et font-weight pour les petits écrans */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+/* Réduire font-size et font-weight pour les très petits écrans, comme les téléphones mobiles */
+@media (max-width: 480px) {
+    body {
+        font-size: 21px;
+        font-weight: 400;
+    }
+}
+
+/* ========================================*/
+/* ================= persag =================*/
+/* Style par défaut pour les grands écrans */
+/* Aide Aux Personnes Âgées */
+.pers_age {
+    /*font-size: 300%;*/
+    /*font-weight: 1000;*/
+    color: white;
+    background-color: #19232b;
+    /*text-align: center;*/
+    padding: 0.75% 0 1.5% 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Réduire font-size et font-weight pour les écrans de taille moyenne */
+@media (max-width: 1024px) {
+    .pers_age {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+/* Réduire davantage font-size et font-weight pour les petits écrans */
+@media (max-width: 768px) {
+    .pers_age {
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+
+/* Réduire font-size et font-weight pour les très petits écrans, comme les téléphones mobiles */
+@media (max-width: 980px) {
+    .pers_age {
+        font-size: 32px;
+        font-weight: 900;
+    }
+}

@@ -1,0 +1,13 @@
+2024-01-25 23:54:36: == Sync Started by User Command
+2024-01-25 23:54:36: Start only 2 threads, limited by tasks to run
+2024-01-25 23:54:36: ConnectCloned connected to file:///H:/der_sol
+2024-01-25 23:54:36: ConnectCloned connected to file:///H:/der_sol
+2024-01-25 23:54:36: ConnectCloned connected to file:///C:/Users/roadn/OneDrive/Python_bakup/der_sol
+2024-01-25 23:54:36: ConnectCloned connected to file:///C:/Users/roadn/OneDrive/Python_bakup/der_sol
+2024-01-25 23:54:37: Ecrasement 'H:/der_sol/.idea/workspace.xml' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/.idea/workspace.xml' (17,767)
+2024-01-25 23:54:37: Close Modified Folder (mod-time, acl): /.idea
+2024-01-25 23:54:37: Ecrasement 'H:/der_sol/artik/templates/artik/base.html' -> 'C:/Users/roadn/OneDrive/Python_bakup/der_sol/artik/templates/artik/base.html' (7,124)
+2024-01-25 23:54:37: Close Modified Folder (mod-time, acl): /artik/templates/artik
+2024-01-25 23:54:37: Sauvegarde du fichier d'état H:/der_sol/_gsdata_/_file_state_v4._gs
+2024-01-25 23:54:37: Sauvegarde du fichier d'état C:/Users/roadn/OneDrive/Python_bakup/der_sol/_gsdata_/_file_state_v4._gs
+2024-01-25 23:54:40: == Sync Complete. Time: 00:00:04, Speed: 0.00/s, Elements synchronisés : 2, Erreurs : 0

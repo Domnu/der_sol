@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aide aux personnes âgées</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../static/artik/scss/survol.css">
+    <link rel="stylesheet" href="../../static/artik/css/style.css">
+    <link rel="stylesheet" href="../../static/artik/css/style_a.css">
+
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+{#    <img src="../../static/artik/img/main_eau_02.png" alt="Dernier Soleil">-->#}
+    <!--        <h1>Aide Aux Personnes Âgées</h1>-->
+</header>
+
+<h1 class="m-0 px-0 text-white text-center display-4 fw-bold pers_age" >La détresse des Personnes Âgées</h1>
+
+<nav class="navbar navbar-expand-sm navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Link</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Les Articles
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <form class="d-flex">
+                <button class="btn btn-primary hauteur" type="button" id="searchButton">Search</button>
+                <label>
+                    <input class="form-control me-2 hauteur" type="text" placeholder="Search" id="searchInput"/>
+                </label>
+                <!-- Add the button code here -->
+
+                <script>
+                    document.getElementById('searchButton').addEventListener('click', function () {
+                        var searchInput = document.getElementById('searchInput').value.toLowerCase();
+                        var nodesToCheck = [document.body];
+
+                        // Effacer les sélections précédentes
+                        var highlights = document.querySelectorAll('.highlight');
+                        highlights.forEach(function (highlight) {
+                            highlight.outerHTML = highlight.textContent;
+                        });
+
+
+                        while (nodesToCheck.length > 0) {
+                            var currentNode = nodesToCheck.pop();
+
+                            if (currentNode.nodeType === Node.TEXT_NODE) {
+                                var text = currentNode.textContent.toLowerCase();
+                                var index = text.indexOf(searchInput);
+
+                                if (index !== -1) {
+                                    var span = document.createElement('span');
+                                    span.className = 'highlight';
+                                    var matchedText = currentNode.splitText(index);
+                                    matchedText.splitText(searchInput.length);
+                                    var highlighted = matchedText.cloneNode(true);
+                                    span.appendChild(highlighted);
+                                    matchedText.parentNode.replaceChild(span, matchedText);
+                                }
+                            } else if (currentNode.nodeType === Node.ELEMENT_NODE && currentNode.nodeName !== 'SCRIPT') {
+                                nodesToCheck = nodesToCheck.concat(Array.from(currentNode.childNodes));
+                            }
+                        }
+                    });
+                </script>
+
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle hauteur" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                        Filter by
+                    </button>
+                    <ul class="dropdown-menu hauteur" aria-labelledby="dropdownMenuButton" id="filterOptions">
+                        <li><a class="dropdown-item" href="#">Contains</a></li>
+                        <li><a class="dropdown-item" href="#">Less than</a></li>
+                        <li class="divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</nav>
+
+
+
+{% block content %}
+    <!-- Le contenu de notre application -->
+{% endblock content %}
+
+
+<section>
+    <br>
+    <p class="m-0 text-dark text-center h4 fw-semibold">Dénonçons les conditions de beaucoup d'ainés</p>
+</section>
+
+
+<footer class="py-3 bg-grey">
+    <p class="m-0 bg-dark text-white text-end fs-6">Copyright &copy; 2024 Artik Application</p>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<!-- Access path to js source code file ... -->
+<script src="../../static/artik/js/search.js"></script> <!-- replace "your-script.js" with the name of your file -->
+</body>
+</html>

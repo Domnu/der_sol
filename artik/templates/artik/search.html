@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche et surlignage</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<form class="d-flex">
+    <button class="btn btn-primary hauteur" type="button" id="searchButton">Search</button>
+    <label>
+        <input class="form-control me-2 hauteur" type="text" placeholder="Search" id="searchInput"/>
+    </label>
+</form>
+
+<script>
+    document.getElementById('searchButton').addEventListener('click', function () {
+        var searchInput = document.getElementById('searchInput').value.toLowerCase();
+        var nodesToCheck = [document.body];
+
+        while (nodesToCheck.length > 0) {
+            var currentNode = nodesToCheck.pop();
+
+            if (currentNode.nodeType === Node.TEXT_NODE) {
+                var text = currentNode.textContent.toLowerCase();
+                var index = text.indexOf(searchInput);
+
+                // Effacer les sélections précédentes
+                var highlights = document.querySelectorAll('.highlight');
+                highlights.forEach(function (highlight) {
+                    highlight.outerHTML = highlight.textContent;
+                });
+
+                if (index !== -1) {
+                    var span = document.createElement('span');
+                    span.className = 'highlight';
+                    var matchedText = currentNode.splitText(index);
+                    matchedText.splitText(searchInput.length);
+                    var highlighted = matchedText.cloneNode(true);
+                    span.appendChild(highlighted);
+                    matchedText.parentNode.replaceChild(span, matchedText);
+                }
+            } else if (currentNode.nodeType === Node.ELEMENT_NODE && currentNode.nodeName !== 'SCRIPT') {
+                nodesToCheck = nodesToCheck.concat(Array.from(currentNode.childNodes));
+            }
+        }
+    });
+</script>
+
+<div class="container">
+    <div>
+        <br>
+        <h2 style="text-align: center">Ces Ainés Encombrants</h2>
+
+        <p>C’est un réquisitoire pathétique qu’il faut porter, un cri du cœur pour les aînés précarisés, isolés,
+            perdus dans l'ombre étouffante de leur solitude, pris au piège d'un monde qui les a abandonnés. Ils
+            vivent dans un crépuscule de l'âme, où l'espoir se dissipe et où la mort semble préférable à la
+            tristesse quotidienne.
+        </p>
+        <p>Imaginez, si vous osez, ces hommes et ces femmes qui ont parcouru la route de la vie avec courage, qui
+            ont bâti des familles, contribué à la société, et qui aujourd'hui, sont abandonnés à leur sort. Leurs
+            mains ridées ont autrefois construit des avenirs, mais aujourd'hui, elles se tendent en quête de chaleur
+            humaine. Leurs yeux fatigués ont contemplé le monde, mais aujourd'hui, ils sont emplis de larmes
+            silencieuses, témoins de leur solitude pesante.
+        </p>
+        <p>Ces aînés, dont le soleil de la vie a pâli, ont été négligés par une société qui valorise souvent la
+            jeunesse au détriment de la sagesse. Ils sont les oubliés, les invisibles, les victimes silencieuses de
+            notre indifférence collective. Leurs voix sont devenues des murmures inaudibles, et leur douleur est
+            profonde, leur souffrance insoutenable.
+        </p>
+        <p>La solitude chez les aînés est une lente descente aux enfers. Le glissement vers la mort devient
+            préférable à l'absence de contact humain, à la froideur des murs de leur chambre solitaire. Les visites
+            rares, les appels téléphoniques espacés ne suffisent pas à briser leur isolement. Ils ont besoin de plus
+            que des mots gentils ; ils ont besoin de présence, de tendresse, d'un rayon de soleil dans leur
+            existence grise.
+        </p>
+        <p>Il est de notre devoir, en tant qu'êtres humains, de ne pas permettre que cette détresse continue. Nous
+            devons agir, agir avec urgence et compassion. Ouvrons nos cœurs à nos aînés, tendons la main vers eux,
+            offrons-leur l'amitié et l'amour qu'ils méritent. Car derrière ces rides se cachent des histoires d'une
+            grande valeur, des leçons de vie que nous ne pouvons pas ignorer.
+        </p>
+        <p>Ne restons pas indifférents à cette détresse. La solitude des aînés est une tragédie silencieuse qui ne
+            devrait pas exister dans une société digne de ce nom. Unissez-nous pour apporter de la lumière dans
+            leurs vies, pour réchauffer leurs cœurs, pour leur donner une raison de continuer à vivre avec dignité
+            et espoir.
+        </p>
+        <p>Ensemble, nous pouvons éclairer l'obscurité de leur solitude et faire en sorte que nos aînés vivent leurs
+            derniers jours entourés de chaleur humaine, de soleil et d'espoir. Ne laissons plus jamais personne
+            préférer le glissement vers la mort plutôt que de vivre dans la désolation. C'est notre devoir, c'est
+            notre responsabilité envers ceux qui ont bâti nos mondes.
+        </p>
+        <p>Que notre compassion et notre action éclairent leur chemin, et que la détresse des aînés devienne un
+            triste souvenir dans l'histoire de l'humanité.
+        </p>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
